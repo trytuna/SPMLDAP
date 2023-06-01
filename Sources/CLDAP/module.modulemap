@@ -1,4 +1,4 @@
-module CLDAP [system] {
+module CLDAP [system] [extern_c] {
   header "/opt/homebrew/opt/openldap/include/ldap.h"
   link "ldap"
   link "lber"
