@@ -1,5 +1,5 @@
 module CLDAP [system] [extern_c] {
-  header "/opt/homebrew/opt/openldap/include/ldap.h"
+  header "shim.h"
   link "ldap"
   link "lber"
   export *
