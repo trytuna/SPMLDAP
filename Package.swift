@@ -5,15 +5,16 @@ let package = Package(
     name: "SPMLDAP",
     products: [
         .library(
-            name: "SPMLDAP",
-            targets: ["SPMLDAP"]),
+            name: "CLDAP",
+            targets: ["CLDAP"]),
     ],
     targets: [
         .systemLibrary(
-            name: "SPMLDAP",
+            name: "CLDAP",
             pkgConfig: "ldap",
             providers: [
-                .apt(["openldap"])
+                .brew(["openldap"]),
+                .apt(["libldap2-dev"])
             ]
         )
     ]

@@ -1,4 +1,4 @@
-module SPMLDAP [system] {
+module CLDAP [system] {
   header "/opt/homebrew/opt/openldap/include/ldap.h"
   link "ldap"
   link "lber"
